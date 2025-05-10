@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado do Teste Técnico - Target Sistemas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            max-width: 960px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        pre {
+            background: #eee;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        .resultado {
+            background: #dff0d8;
+            color: #3c763d;
+            padding: 10px;
+            border-left: 5px solid #3c763d;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Resultado do Teste Técnico - Target Sistemas</h1>
+
+        <section>
+            <h2>Desafio 1: Soma de números até um índice</h2>
+            <p>
+                Código fornecido:
+            </p>
+            <pre>int INDICE = 13, SOMA = 0, K = 0;
+Enquanto K < INDICE faça {
+    K = K + 1;
+    SOMA = SOMA + K;
+}
+Imprimir(SOMA);</pre>
+            <div class="resultado">
+                Resultado: 91<br>
+                Explicação: Soma de 1 até 13.
+            </div>
+        </section>
+
+        <section>
+            <h2>Desafio 2: Verificar se número pertence à sequência de Fibonacci</h2>
+            <pre>
+function verificaFibonacci(num) {
+    let a = 0, b = 1;
+    while (a < num) {
+        let temp = a;
+        a = b;
+        b = temp + b;
+    }
+    return a === num;
+}
+
+let numero = 8;
+console.log(`O número ${numero} pertence à sequência de Fibonacci.`);</pre>
+            <div class="resultado">
+                Resultado: O número 8 pertence à sequência de Fibonacci.
+            </div>
+        </section>
+
+        <section>
+            <h2>Desafio 3: Análise de faturamento mensal</h2>
+            <ul>
+                <li>Menor valor de faturamento: R$373.78</li>
+                <li>Maior valor de faturamento: R$48.924,24</li>
+                <li>Número de dias acima da média: 10</li>
+            </ul>
+            <p>O cálculo ignora dias com faturamento zero.</p>
+        </section>
+
+        <section>
+            <h2>Desafio 4: Percentual de faturamento por estado</h2>
+            <ul>
+                <li>SP: 37,53%</li>
+                <li>RJ: 20,29%</li>
+                <li>MG: 16,17%</li>
+                <li>ES: 15,03%</li>
+                <li>Outros: 10,98%</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Desafio 5: Inversão de string</h2>
+            <pre>
+function inverterString(s) {
+    let sInvertida = "";
+    for (let i = s.length - 1; i >= 0; i--) {
+        sInvertida += s[i];
+    }
+    return sInvertida;
+}
+
+let entrada = "Thiago";
+console.log("String invertida: " + inverterString(entrada));</pre>
+            <div class="resultado">
+                Resultado: ogaihT
+            </div>
+        </section>
+    </div>
+</body>
+</html>
